@@ -1,0 +1,82 @@
+@import url("https://dl.dafont.com/dl/?f=digital_7");
+body,html{
+  height: 100%;
+  width: 100%;
+}
+body, html ,#app {
+  display:flex;
+  justify-content:center;
+  text-align: center;
+  background-color:black;
+  height: 100%;
+  width:100%;
+  justify-content:center;
+  align-items: center;
+}
+#container{
+background-color:#333333
+;
+height: 75%;
+width:85%;
+padding:5%;
+border-radius:20px;
+}
+#inp{
+grid-row-start: 2;
+grid-row-end: 4;
+border-top:0;
+font-size: 8vh;
+}
+#buttons {  
+  height: 70%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+}
+#screen {
+  width: 100%;
+  font-family: "Comics Sans";
+  height:30%;
+  display:grid;
+  grid-template-rows: 33% 33% 33%;
+}
+#display{ 
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom:0;
+  font-size: 4vh;
+}
+.btn{
+  border-radius: 0px
+}
+input{
+  width:100%;
+}
+#equals{
+ grid-column-start:1;
+  grid-column-end:5;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+@media screen and (max-width: 210px), screen and (max-height: 395px) {
+  
+  #container,body, html ,#app {
+  width:100%;
+  height: 100%;
+  padding:0;
+  margin: 0;
+  }
+  
+  #screen, #buttons {
+    min-width: 150px
+  }
+  #screen{
+     min-height: 55px
+    }
+    #buttons{
+     min-height: 205px
+    }
+}
